@@ -25,15 +25,36 @@ const info = [{
 
 function informacion(){
     if(select.value == "persona1"){
-        resultado.innerHTML = 
-    } else if(select.value == "persona2"){
-        resultado.innerHTML = info[1]
-    } else if(select.value == "persona3"){
-        resultado.innerHTML = info[2]
+        resultado.innerHTML = info[0].infogen
+    } else if (select.value == "persona2") {
+    resultado.innerHTML = info[1].infogen
+    } else if (select.value == "persona3") {
+        resultado.innerHTML = info[2].infogen
     }
-    
 }
 
-select.addEventListener("change", informacion)
+function imagen(){
+    if(select.value == "persona1"){
+        resultado.innerHTML = info[0].imagen
+    }else if (select.value == "persona2") {
+    resultado.innerHTML = info[1].imagen
+    } else if (select.value == "persona3") {
+        resultado.innerHTML = info[2].imagen
+    }
+}
+
+function caracteristicas(){
+    if(select.value == "persona1"){
+        resultado.innerHTML = info[0].caracteristicas
+    }else if (select.value == "persona2") {
+    resultado.innerHTML = info[1].caracteristicas
+    } else if (select.value == "persona3") {
+        resultado.innerHTML = info[2].caracteristicas
+    }
+}
+
+btnInfo.addEventListener("click", informacion)
+btnImg.addEventListener("click", imagen)
+btnCar.addEventListener("click", caracteristicas)
 
 
