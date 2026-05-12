@@ -25,8 +25,7 @@ const info = [{
 
 function informacion(){
     if(select.value == "persona1"){
-        resultado.innerHTML = info[0]
-
+        resultado.innerHTML = 
     } else if(select.value == "persona2"){
         resultado.innerHTML = info[1]
     } else if(select.value == "persona3"){
