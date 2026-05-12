@@ -1,4 +1,7 @@
 let select = document.querySelector("#select")
+let btnInfo = document.querySelector("#btnInfo")
+let btnImg = document.querySelector("#btnImg")
+let btnCar = document.querySelector("#btnCar")
 let resultado = document.querySelector("#resultado")
 
 const info = [{
@@ -22,7 +25,7 @@ const info = [{
 
 function informacion(){
     if(select.value == "persona1"){
-        resultado.innerHTML = info[0].infogen
+        resultado.innerHTML = info[0]
 
     } else if(select.value == "persona2"){
         resultado.innerHTML = info[1]
