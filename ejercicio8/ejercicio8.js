@@ -4,11 +4,12 @@ let btnImg = document.querySelector("#btnImg")
 let btnCar = document.querySelector("#btnCar")
 let resultado = document.querySelector("#resultado")
 
-const info = [{
+const info = [
+    {
     infogen: "persona 1",
     imagen: `<img src="https://www.frutas-hortalizas.com/img/fruites_verdures/presentacio/59.jpg" alt="">`,
     caracteristicas: "super rapido"
-},
+    },
     {
     infogen: "persona 2",
     imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNS-nHlfxSHpI9ozmLP9nVT492FQtdR9u9FMo0j54YAXIwmhMuNOiP3jWrrV06E2liYFv603eg9Uu_XptjTn0XQSRQ9dKP4f6GaacC4gl7&s=10",
@@ -24,33 +25,15 @@ const info = [{
 
 
 function informacion(){
-    if(select.value == "persona1"){
-        resultado.innerHTML = info[0].infogen
-    } else if (select.value == "persona2") {
-    resultado.innerHTML = info[1].infogen
-    } else if (select.value == "persona3") {
-        resultado.innerHTML = info[2].infogen
-    }
+    resultado.innerHTML = info[select.value].infogen
 }
 
 function imagen(){
-    if(select.value == "persona1"){
-        resultado.innerHTML = info[0].imagen
-    }else if (select.value == "persona2") {
-    resultado.innerHTML = info[1].imagen
-    } else if (select.value == "persona3") {
-        resultado.innerHTML = info[2].imagen
-    }
+    resultado.innerHTML = info[select.value].imagen
 }
 
 function caracteristicas(){
-    if(select.value == "persona1"){
-        resultado.innerHTML = info[0].caracteristicas
-    }else if (select.value == "persona2") {
-    resultado.innerHTML = info[1].caracteristicas
-    } else if (select.value == "persona3") {
-        resultado.innerHTML = info[2].caracteristicas
-    }
+    resultado.innerHTML = info[select.value].caracteristicas
 }
 
 btnInfo.addEventListener("click", informacion)

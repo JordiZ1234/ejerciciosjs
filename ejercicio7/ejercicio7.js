@@ -2,15 +2,12 @@ let select = document.querySelector("#select")
 let resultado = document.querySelector("#resultado")
 console.log(select.value)
 
-const info = [{
+const info = {
     infogen: "Ejercicio 6",
     imagen: "https://www.frutas-hortalizas.com/img/fruites_verdures/presentacio/59.jpg",
     caracteristicas: "caracteristicas"
-},
-    {
-    
-    }
-]
+}
+
 
 
 
