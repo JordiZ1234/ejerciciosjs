@@ -17,7 +17,7 @@ function informacion(){
 btnInfo.addEventListener("click", informacion)
 
 function imagen(){
-    resultado.innerHTML = info.imagen.src
+    resultado.innerHTML = `<img src="${info.imagen}" alt="">`
 }
 
 btnImg.addEventListener("click", imagen)
